@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "license": "MIT",
+  "scripts": {
+    "compile": "tsc -p .",
+    "js": "node dist/index.js",
+    "ts": "ts-node src/index.ts",
+    "working": "npm run compile && npm run js",
+    "not:working": "npm run ts"
+  },
   "devDependencies": {
     "@types/node": "^10.9.4",
     "ts-node": "^7.0.1",
